@@ -1,0 +1,71 @@
+python train.py --resume_ckpt "my_sd15_model" ^
+--max_epochs 10 ^
+--data_root "250_1" ^
+--lr_scheduler cosine ^
+--project_name food250 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\food250-20240314-144741\ckpts\last-food250-ep10-gs02480" ^
+--max_epochs 10 ^
+--data_root "250_2" ^
+--lr_scheduler cosine ^
+--project_name food500 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\food500-20240314-163903\ckpts\last-food500-ep10-gs02500" ^
+--max_epochs 10 ^
+--data_root "250_3" ^
+--lr_scheduler cosine ^
+--project_name food750 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\food750-20240319-182408\ckpts\last-food750-ep10-gs02490" ^
+--max_epochs 10 ^
+--data_root "250_4" ^
+--lr_scheduler cosine ^
+--project_name food1000 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "my_sd15_model" ^
+--max_epochs 10 ^
+--data_root "ingredients" ^
+--lr_scheduler cosine ^
+--project_name ingredients1 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\ingredients1-20240408-161549\ckpts\last-ingredients1-ep10-gs02400" ^
+--max_epochs 10 ^
+--data_root "ingredients2\Fruit" ^
+--lr_scheduler cosine ^
+--project_name ingredients2 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\ingredients2-20240408-165903\ckpts\last-ingredients2-ep10-gs11420" ^
+--max_epochs 10 ^
+--data_root "ingredients2\Packages" ^
+--lr_scheduler cosine ^
+--project_name ingredients3 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6
+
+python train.py --resume_ckpt "logs\ingredients3-20240408-205831\ckpts\last-ingredients3-ep10-gs08640" ^
+--max_epochs 10 ^
+--data_root "ingredients2\Vegetables" ^
+--lr_scheduler cosine ^
+--project_name ingredients4 ^
+--batch_size 1 ^
+--sample_steps 30 ^
+--lr 3e-6

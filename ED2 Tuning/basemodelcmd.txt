@@ -1,0 +1,8 @@
+python utils/convert_original_stable_diffusion_to_diffusers.py --scheduler_type ddim ^
+--original_config_file v1-inference.yaml ^
+--image_size 512 ^
+--checkpoint_path v1-5-pruned-emaonly.safetensors ^
+--from_safetensors ^
+--to_safetensors ^
+--prediction_type epsilon ^
+--dump_path "ckpt_cache/my_sd15_model"
